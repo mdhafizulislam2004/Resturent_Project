@@ -1,0 +1,752 @@
+[
+  {
+    "id": 101,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Grilled Chicken Salad",
+    "price": 420,
+    "rating": 4.9,
+    "reviews": 245,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+  },
+  {
+    "id": 102,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Greek Salad",
+    "price": 380,
+    "rating": 4.8,
+    "reviews": 198,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+  },
+  {
+    "id": 103,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Caesar Salad",
+    "price": 390,
+    "rating": 4.8,
+    "reviews": 176,
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+  },
+  {
+    "id": 104,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Quinoa Power Bowl",
+    "price": 450,
+    "rating": 4.9,
+    "reviews": 162,
+    "image": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38"
+  },
+  {
+    "id": 105,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Avocado Toast",
+    "price": 350,
+    "rating": 4.7,
+    "reviews": 184,
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8"
+  },
+  {
+    "id": 106,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Fruit Salad",
+    "price": 320,
+    "rating": 4.8,
+    "reviews": 210,
+    "image": "https://images.unsplash.com/photo-1564093497595-593b96d80180"
+  },
+  {
+    "id": 107,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Chicken Protein Bowl",
+    "price": 480,
+    "rating": 4.9,
+    "reviews": 198,
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19"
+  },
+  {
+    "id": 108,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Veggie Wrap",
+    "price": 340,
+    "rating": 4.7,
+    "reviews": 152,
+    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f"
+  },
+  {
+    "id": 109,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Grilled Salmon",
+    "price": 650,
+    "rating": 5.0,
+    "reviews": 132,
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288"
+  },
+  {
+    "id": 110,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Brown Rice Bowl",
+    "price": 430,
+    "rating": 4.8,
+    "reviews": 167,
+    "image": "https://images.unsplash.com/photo-1516684732162-798a0062be99"
+  },
+  {
+    "id": 111,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Oatmeal with Fruits",
+    "price": 290,
+    "rating": 4.7,
+    "reviews": 143,
+    "image": "https://images.unsplash.com/photo-1517673400267-0251440c45dc"
+  },
+  {
+    "id": 112,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Tuna Salad",
+    "price": 520,
+    "rating": 4.9,
+    "reviews": 176,
+    "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f"
+  },
+  {
+    "id": 113,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Egg & Avocado Bowl",
+    "price": 360,
+    "rating": 4.8,
+    "reviews": 158,
+    "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543"
+  },
+  {
+    "id": 114,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Veggie Power Bowl",
+    "price": 410,
+    "rating": 4.8,
+    "reviews": 149,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+  },
+  {
+    "id": 115,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Chicken & Broccoli",
+    "price": 470,
+    "rating": 4.9,
+    "reviews": 185,
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554"
+  },
+  {
+    "id": 116,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Grilled Veggie Plate",
+    "price": 390,
+    "rating": 4.7,
+    "reviews": 136,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+  },
+  {
+    "id": 117,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Shrimp Salad",
+    "price": 560,
+    "rating": 4.9,
+    "reviews": 141,
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2"
+  },
+  {
+    "id": 118,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Turkey Sandwich",
+    "price": 440,
+    "rating": 4.8,
+    "reviews": 162,
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af"
+  },
+  {
+    "id": 119,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Spinach Omelette",
+    "price": 330,
+    "rating": 4.7,
+    "reviews": 128,
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71"
+  },
+  {
+    "id": 120,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Chickpea Salad",
+    "price": 360,
+    "rating": 4.8,
+    "reviews": 151,
+    "image": "https://images.unsplash.com/photo-1543332164-6e82f355badc"
+  },
+  {
+    "id": 121,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Tofu Rice Bowl",
+    "price": 410,
+    "rating": 4.7,
+    "reviews": 139,
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19"
+  },
+  {
+    "id": 122,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Fresh Garden Salad",
+    "price": 310,
+    "rating": 4.6,
+    "reviews": 167,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+  },
+  {
+    "id": 123,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Protein Pancakes",
+    "price": 380,
+    "rating": 4.8,
+    "reviews": 156,
+    "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93"
+  },
+  {
+    "id": 124,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Mixed Fruit Bowl",
+    "price": 340,
+    "rating": 4.7,
+    "reviews": 148,
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352"
+  },
+  {
+    "id": 125,
+    "category_id": 1,
+    "category": "Healthy Food",
+    "name": "Grilled Chicken Wrap",
+    "price": 450,
+    "rating": 4.9,
+    "reviews": 203,
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+  },
+  {
+    "id": 201,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Fresh Orange Juice",
+    "price": 180,
+    "rating": 4.9,
+    "reviews": 215,
+    "image": "https://images.unsplash.com/photo-1600271886742-f049cd5bba3f"
+  },
+  {
+    "id": 202,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Mango Juice",
+    "price": 200,
+    "rating": 4.8,
+    "reviews": 194,
+    "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4"
+  },
+  {
+    "id": 203,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Watermelon Juice",
+    "price": 170,
+    "rating": 4.7,
+    "reviews": 176,
+    "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859"
+  },
+  {
+    "id": 204,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Apple Juice",
+    "price": 190,
+    "rating": 4.8,
+    "reviews": 182,
+    "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767"
+  },
+  {
+    "id": 205,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Pineapple Juice",
+    "price": 210,
+    "rating": 4.9,
+    "reviews": 165,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a90bb918"
+  },
+  {
+    "id": 206,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Lemon Mint",
+    "price": 150,
+    "rating": 4.8,
+    "reviews": 231,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd"
+  },
+  {
+    "id": 207,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Fresh Lime Soda",
+    "price": 160,
+    "rating": 4.7,
+    "reviews": 188,
+    "image": "https://images.unsplash.com/photo-1497534446932-c925b458314e"
+  },
+  {
+    "id": 208,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Strawberry Smoothie",
+    "price": 260,
+    "rating": 4.9,
+    "reviews": 172,
+    "image": "https://images.unsplash.com/photo-1553530979-fbb9e4aee36f"
+  },
+  {
+    "id": 209,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Banana Smoothie",
+    "price": 240,
+    "rating": 4.8,
+    "reviews": 154,
+    "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625"
+  },
+  {
+    "id": 210,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Avocado Smoothie",
+    "price": 280,
+    "rating": 4.9,
+    "reviews": 143,
+    "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc"
+  },
+  {
+    "id": 211,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Chocolate Milkshake",
+    "price": 250,
+    "rating": 4.9,
+    "reviews": 201,
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699"
+  },
+  {
+    "id": 212,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Vanilla Milkshake",
+    "price": 240,
+    "rating": 4.8,
+    "reviews": 169,
+    "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc"
+  },
+  {
+    "id": 213,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Cold Coffee",
+    "price": 230,
+    "rating": 4.8,
+    "reviews": 193,
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c"
+  },
+  {
+    "id": 214,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Iced Latte",
+    "price": 260,
+    "rating": 4.7,
+    "reviews": 144,
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+  },
+  {
+    "id": 215,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Cappuccino",
+    "price": 220,
+    "rating": 4.9,
+    "reviews": 211,
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+  },
+  {
+    "id": 216,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Espresso",
+    "price": 180,
+    "rating": 4.8,
+    "reviews": 175,
+    "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348"
+  },
+  {
+    "id": 217,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Green Tea",
+    "price": 120,
+    "rating": 4.7,
+    "reviews": 162,
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+  },
+  {
+    "id": 218,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Black Tea",
+    "price": 100,
+    "rating": 4.6,
+    "reviews": 131,
+    "image": "https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2"
+  },
+  {
+    "id": 219,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Hot Chocolate",
+    "price": 240,
+    "rating": 4.9,
+    "reviews": 184,
+    "image": "https://images.unsplash.com/photo-1517578239113-b03992dcdd25"
+  },
+  {
+    "id": 220,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Coconut Water",
+    "price": 150,
+    "rating": 4.8,
+    "reviews": 156,
+    "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4"
+  },
+  {
+    "id": 221,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Peach Iced Tea",
+    "price": 190,
+    "rating": 4.7,
+    "reviews": 149,
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b"
+  },
+  {
+    "id": 222,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Blueberry Smoothie",
+    "price": 290,
+    "rating": 4.9,
+    "reviews": 171,
+    "image": "https://images.unsplash.com/photo-1553530979-fbb9e4aee36f"
+  },
+  {
+    "id": 223,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Kiwi Smoothie",
+    "price": 280,
+    "rating": 4.8,
+    "reviews": 158,
+    "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc"
+  },
+  {
+    "id": 224,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Mixed Fruit Juice",
+    "price": 220,
+    "rating": 4.9,
+    "reviews": 204,
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e"
+  },
+  {
+    "id": 225,
+    "category_id": 2,
+    "category": "Drinks & Beverages",
+    "name": "Sparkling Lemonade",
+    "price": 180,
+    "rating": 4.8,
+    "reviews": 189,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6cf7"
+  },
+  {
+    "id": 301,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Virgin Mojito",
+    "price": 280,
+    "rating": 4.9,
+    "reviews": 245,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6cf7"
+  },
+  {
+    "id": 302,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Blue Lagoon",
+    "price": 320,
+    "rating": 4.8,
+    "reviews": 198,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd"
+  },
+  {
+    "id": 303,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Strawberry Mojito",
+    "price": 300,
+    "rating": 4.8,
+    "reviews": 187,
+    "image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187"
+  },
+  {
+    "id": 304,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Green Apple Cooler",
+    "price": 290,
+    "rating": 4.7,
+    "reviews": 156,
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e"
+  },
+  {
+    "id": 305,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Watermelon Splash",
+    "price": 270,
+    "rating": 4.6,
+    "reviews": 132,
+    "image": "https://images.unsplash.com/photo-1497534446932-c925b458314e"
+  },
+  {
+    "id": 306,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Mint Lemon Fizz",
+    "price": 260,
+    "rating": 4.8,
+    "reviews": 211,
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b"
+  },
+  {
+    "id": 307,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Orange Sunrise",
+    "price": 310,
+    "rating": 4.9,
+    "reviews": 176,
+    "image": "https://images.unsplash.com/photo-1461823385004-d7660947a7c0"
+  },
+  {
+    "id": 308,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Pineapple Punch",
+    "price": 295,
+    "rating": 4.7,
+    "reviews": 145,
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+  },
+  {
+    "id": 309,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Passion Fruit Cooler",
+    "price": 330,
+    "rating": 4.9,
+    "reviews": 203,
+    "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543"
+  },
+  {
+    "id": 310,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Cucumber Mint Cooler",
+    "price": 280,
+    "rating": 4.7,
+    "reviews": 124,
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+  },
+  {
+    "id": 311,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Kiwi Sparkler",
+    "price": 320,
+    "rating": 4.8,
+    "reviews": 171,
+    "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc"
+  },
+  {
+    "id": 312,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Berry Blast",
+    "price": 340,
+    "rating": 4.9,
+    "reviews": 218,
+    "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+  },
+  {
+    "id": 313,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Virgin Pina Colada",
+    "price": 360,
+    "rating": 5.0,
+    "reviews": 267,
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061"
+  },
+  {
+    "id": 314,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Mango Tango",
+    "price": 300,
+    "rating": 4.8,
+    "reviews": 183,
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+  },
+  {
+    "id": 315,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Lychee Delight",
+    "price": 350,
+    "rating": 4.9,
+    "reviews": 204,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd"
+  },
+  {
+    "id": 316,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Cherry Cooler",
+    "price": 290,
+    "rating": 4.7,
+    "reviews": 141,
+    "image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187"
+  },
+  {
+    "id": 317,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Lime Twist",
+    "price": 250,
+    "rating": 4.6,
+    "reviews": 119,
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e"
+  },
+  {
+    "id": 318,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Peach Paradise",
+    "price": 340,
+    "rating": 4.8,
+    "reviews": 196,
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b"
+  },
+  {
+    "id": 319,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Coconut Breeze",
+    "price": 330,
+    "rating": 4.9,
+    "reviews": 185,
+    "image": "https://images.unsplash.com/photo-1497534446932-c925b458314e"
+  },
+  {
+    "id": 320,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Dragon Fruit Cooler",
+    "price": 370,
+    "rating": 5.0,
+    "reviews": 275,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6cf7"
+  },
+  {
+    "id": 321,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Pink Lemonade",
+    "price": 260,
+    "rating": 4.7,
+    "reviews": 154,
+    "image": "https://images.unsplash.com/photo-1461823385004-d7660947a7c0"
+  },
+  {
+    "id": 322,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Minty Melon",
+    "price": 290,
+    "rating": 4.8,
+    "reviews": 168,
+    "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543"
+  },
+  {
+    "id": 323,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Apple Mint Fizz",
+    "price": 310,
+    "rating": 4.9,
+    "reviews": 194,
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+  },
+  {
+    "id": 324,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Sunset Cooler",
+    "price": 340,
+    "rating": 4.8,
+    "reviews": 186,
+    "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc"
+  },
+  {
+    "id": 325,
+    "category_id": 3,
+    "category": "Bar & Mocktails",
+    "name": "Tropical Breeze",
+    "price": 360,
+    "rating": 5.0,
+    "reviews": 289,
+    "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+  }
+]

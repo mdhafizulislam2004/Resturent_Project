@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 const Hero = () => {
     return (
         <div
@@ -9,13 +10,14 @@ const Hero = () => {
         >
             <div className="hero-overlay"></div>
             {/* <div className="hero-content text-neutral-content text-center"> */}
-            <div className="max-w-full text-center">
-                <h1 className="mb-8 text-5xl text-white font-bold">Hello, New Friend!</h1>
+            <div className="max-w-full text-center px-3">
+                <h1 className="mb-8 text-5xl animate-bounce text-white font-bold">Hello, New Friend!</h1>
                 <h1 className="mb-8 text-5xl text-white font-bold">Welcome,To:-</h1>
                 <div>
-                    <p className="mb-5 text-6xl font-bold text-blue-500">
+                    <motion.p whileHover={{ scale: 1.9 }}
+                        whileTap={{ scale: 0.8 }} className="mb-5 text-6xl font-bold text-blue-500">
                         Taste Nest <span className="text-red-500">Resturent</span>
-                    </p>
+                    </motion.p>
                 </div>
             </div>
         </div>

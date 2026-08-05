@@ -7,3 +7,11 @@
 * {
     font-family: "Crimson Text", serif;
 }
+
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #bb1e23;
+  --color-secondary: teal;
+}
