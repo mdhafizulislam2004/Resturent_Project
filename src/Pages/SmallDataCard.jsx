@@ -3,7 +3,7 @@ const SmallDataCard = ({ Data }) => {
     // console.log(Data);
 
 
-    const { title, image, items, description, slug } = Data;
+    const { title, image, items, description, } = Data;
     return (
 
         <motion.div whileHover={{ scale: 1.04}} className="max-w-sm rounded-lg hover:shadow-2xl overflow-hidden bg-white p-4 font-sans border border-gray-100 shadow-sm">
@@ -35,9 +35,9 @@ const SmallDataCard = ({ Data }) => {
                 </p>
 
 
-                <button className="bg-[#1a1d20] hover:bg-primary text-white font-medium py-2.5 px-5 rounded text-sm transition-colors duration-200">
+                {/* <button className="bg-[#1a1d20] hover:bg-primary text-white font-medium py-2.5 px-5 rounded text-sm transition-colors duration-200">
                     {slug}
-                </button>
+                </button> */}
             </div>
         </motion.div>
     );

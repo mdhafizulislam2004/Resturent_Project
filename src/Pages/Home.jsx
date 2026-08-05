@@ -4,6 +4,7 @@ import AllfoodCard from "../Main/AllfoodCard";
 import DringSection from "../Main/DringSection";
 import HealthyFoodSection from "../Main/HealthyFoodSection";
 import SoftDrinks from "../Main/SoftDrinks";
+import Marquee from "./Marquee";
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
             }>
                 <AllfoodCard></AllfoodCard>
             </Suspense>
+            <Marquee></Marquee>
         </div>
     );
 };

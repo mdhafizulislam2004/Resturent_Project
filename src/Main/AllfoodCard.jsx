@@ -22,7 +22,7 @@ const AllfoodCard = () => {
                 </Suspense>
             </div>
              <div className="items-center text-center py-5">
-                <NavLink to="/menu"><p className="text-2xl shadow-3xl btn-primary hover:btn-secondary">Show More Data</p></NavLink>
+                <NavLink to="/menu"><p className="text-2xl shadow-3xl btn-secondary hover:text-black hover:btn-primary btn">Show More Data</p></NavLink>
              </div>
         </div>
     );

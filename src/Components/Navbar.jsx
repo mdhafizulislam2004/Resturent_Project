@@ -2,10 +2,10 @@ import { NavLink } from "react-router";
 const Navbar = () => {
 
     const link = <>
-        <NavLink to="/"><li className="m-2 text-xl">Home</li></NavLink>
-        <NavLink to="/menu"><li className="m-2 text-xl">Menu</li></NavLink>
-        <NavLink to="/about"><li className="m-2 text-xl">About</li></NavLink>
-        <NavLink to="/contect"><li className="m-2 text-xl">Contect</li></NavLink>
+        <NavLink className={({isActive})=>isActive?"text-red-500 font-bold":"text-black"} to="/"><li className="m-2 text-xl">Home</li></NavLink>
+        <NavLink className={({isActive})=>isActive?"text-red-500 font-bold":"text-black"} to="/menu"><li className="m-2 text-xl">Menu</li></NavLink>
+        <NavLink className={({isActive})=>isActive?"text-red-500 font-bold":"text-black"} to="/about"><li className="m-2 text-xl">About</li></NavLink>
+        <NavLink className={({isActive})=>isActive?"text-red-500 font-bold":"text-black"} to="/contect"><li className="m-2 text-xl">Contect</li></NavLink>
     </>
 
     return (
@@ -28,7 +28,7 @@ const Navbar = () => {
                     {link}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end mx-5">
                 <a href="" className="btn btn-primary outline-0">Login</a>
             </div>
         </div>

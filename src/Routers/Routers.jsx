@@ -5,6 +5,8 @@ import AllfoodCard from "../Main/AllfoodCard";
 import Menu from "../Components/Menu";
 import PrivateRoutes from "../Private/PrivateRoutes";
 import Login from "../Pages/Login";
+import About from "../Pages/About";
+import Contect from "../Pages/Contect";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -29,5 +31,13 @@ export const router = createBrowserRouter([
   {
     path:"/login",
     element:<Login/>
+  },
+  {
+    path:"/about",
+    Component:About
+  },
+  {
+    path:"/contect",
+    Component:Contect
   }
 ]);

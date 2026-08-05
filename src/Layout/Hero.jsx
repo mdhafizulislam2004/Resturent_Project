@@ -14,7 +14,7 @@ const Hero = () => {
                 <h1 className="mb-8 text-5xl animate-bounce text-white font-bold">Hello, New Friend!</h1>
                 <h1 className="mb-8 text-5xl text-white font-bold">Welcome,To:-</h1>
                 <div>
-                    <motion.p whileHover={{ scale: 1.9 }}
+                    <motion.p whileHover={{ scale: 1.09 }}
                         whileTap={{ scale: 0.8 }} className="mb-5 text-6xl font-bold text-blue-500">
                         Taste Nest <span className="text-red-500">Resturent</span>
                     </motion.p>
