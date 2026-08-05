@@ -1,22 +1,27 @@
+import {motion} from "motion/react"
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 import Rating from "./Rating";
+import WhyChoseUs from "./WhyChooseUse";
+import { NavLink } from "react-router";
 
 const About = () => {
     return (
         <div>
+            <Navbar/>
             <section className="py-20 bg-base-100">
-                <div className="max-w-6xl mb-5 mx-auto px-5 grid lg:grid-cols-2 gap-10 items-center">
+                <motion.div whileHover={{ scale: 1.04}} className="max-w-6xl mb-10 mx-auto px-5 grid lg:grid-cols-2 py-5 rounded-2xl shadow-xl gap-10 items-center">
 
                     <div>
                         <img
-                            className="rounded-2xl shadow-xl"
+                            className="rounded-2xl shadow-2xl"
                             src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
                             alt="Restaurant"
                         />
                     </div>
 
                     <div>
-                        <h4 className="text-orange-500 font-semibold uppercase tracking-widest">
+                        <h4 className="text-orange-500 text-4xl font-bold uppercase tracking-widest">
                             About Us
                         </h4>
 
@@ -39,13 +44,14 @@ const About = () => {
                         </p>
 
                         <button className="btn btn-warning mt-8 text-white">
-                            Explore Our Menu
+                           <NavLink to="/menu"> Explore Our Menu</NavLink>
                         </button>
                     </div>
 
-                </div>
+                </motion.div>
             <Rating />
             </section>
+            <WhyChoseUs/>
             <Footer />
 
         </div>

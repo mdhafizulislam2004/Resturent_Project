@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+    "title": "Fresh Ingredients",
+    "description": "Every dish is made using fresh and high-quality ingredients."
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
+    "title": "Expert Chefs",
+    "description": "Our experienced chefs prepare every meal with passion."
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1526367790999-0150786686a2",
+    "title": "Fast Delivery",
+    "description": "Quick and reliable delivery to your doorstep."
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+    "title": "Top Quality",
+    "description": "Premium food and exceptional customer service every day."
+  }
+]

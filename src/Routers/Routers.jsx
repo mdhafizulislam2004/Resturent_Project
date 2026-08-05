@@ -7,6 +7,7 @@ import PrivateRoutes from "../Private/PrivateRoutes";
 import Login from "../Pages/Login";
 import About from "../Pages/About";
 import Contect from "../Pages/Contect";
+import Register from "../Pages/Register";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -39,5 +40,9 @@ export const router = createBrowserRouter([
   {
     path:"/contect",
     Component:Contect
+  },
+  {
+    path:"/register",
+    Component:Register
   }
 ]);
