@@ -3,6 +3,10 @@ const HealthyFoodSection = () => {
     return (
         <div className="hero bg-base-200 py-6">
             <motion.div whileHover={{ scale: 1.04, y:-5 }}
+            initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true }}
                 className="hero-content flex-col lg:w-[800px] md:w-[600px] hover:shadow-2xl hover:rounded-2xl lg:flex-row-reverse">
                 <img
                     src="https://as2.ftcdn.net/v2/jpg/02/34/24/15/1000_F_234241545_L5VvQbW36l99rsvDCGATdSTuC8Zm8nPJ.jpg"

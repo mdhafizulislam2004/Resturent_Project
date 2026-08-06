@@ -1,43 +1,27 @@
-import {motion} from "motion/react"
-const SmallDataCard = ({ Data }) => {
+import { motion } from "motion/react"
+const SmallDataCard = ({ Data,index }) => {
     // console.log(Data);
 
 
-    const { title, image, items, description, } = Data;
+    const { title, image, items, description } = Data;
     return (
 
-        <motion.div whileHover={{ scale: 1.04}} className="max-w-sm rounded-lg hover:shadow-2xl overflow-hidden bg-white p-4 font-sans border border-gray-100 shadow-sm">
-
-
-            <div className="relative">
-                <img
+        <motion.div whileHover={{ scale: 1.04 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            index
+            transition={{ duration: 0.4, ease: "easeOut",delay:index*0.1 }}
+            viewport={{ once: true }}
+            className="card hover:shadow-2xl bg-base-100 w-full shadow-sm">
+            <figure>
+                <img className="h-[300px] relative w-full p-3 rounded-2xl"
                     src={image}
-                    alt={title}
-                    className="w-full h-[300px] h-64 items-center object-cover rounded-xl"
-                />
-
-
-                <div className="absolute bottom-3 right-3 bg-neutral-800 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-lg border-2 border-white shadow-md">
-                    {items}
-                </div>
-            </div>
-
-
-            <div className="pt-5 pb-2">
-
-                <h2 className="text-3xl font-extrabold text-neutral-800 mb-3 tracking-tight">
-                    {title}
-                </h2>
-
-
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                    {description}
-                </p>
-
-
-                {/* <button className="bg-[#1a1d20] hover:bg-primary text-white font-medium py-2.5 px-5 rounded text-sm transition-colors duration-200">
-                    {slug}
-                </button> */}
+                    alt={title} />
+                <p className="p-3 bg-green-500 absolute rounded-full bottom-38 text-2xl right-5 text-white">{items}</p>
+            </figure>
+            <div className="card-body">
+                <h2 className=" text-2xl font-bold">{title}</h2>
+                <p className="text-ms">{description}</p>
             </div>
         </motion.div>
     );
