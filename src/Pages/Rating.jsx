@@ -15,7 +15,7 @@ const Rating = () => {
                         <div className="flex justify-center mb-5">
                             <FaCalendar size={44} />
                         </div>
-                        <h2 className="text-6xl font-bold"><CountUp end={10} duration={2} />+</h2>
+                        <h2 className="text-6xl font-bold"><CountUp end={10} duration={3} />+</h2>
                         <p className="mt-3 text-lg">Years Experience</p>
                     </div>
 
@@ -23,7 +23,7 @@ const Rating = () => {
                         <div className="flex justify-center mb-2">
                             <MdGroups size={64} />
                         </div>
-                        <h2 className="text-6xl font-bold"> <CountUp end={100} duration={1} />k</h2>
+                        <h2 className="text-6xl font-bold"> <CountUp end={100} duration={2} />k</h2>
                         <p className="mt-3 text-lg">Happy Customers</p>
                     </div>
 
@@ -31,7 +31,7 @@ const Rating = () => {
                         <div className="flex justify-center mb-5">
                             <FaSitemap size={44} />
                         </div>
-                        <h2 className="text-6xl font-bold"><CountUp end={15} duration={2} />
+                        <h2 className="text-6xl font-bold"><CountUp end={15} duration={3} />
                         +</h2>
                         <p className="mt-3 text-lg">Food Items</p>
                     </div>
@@ -40,7 +40,7 @@ const Rating = () => {
                         <div className="flex justify-center mb-5">
                             <FaRegStar size={54} />
                         </div>
-                        <h2 className="text-6xl font-bold">4.<CountUp end={9} duration={2} /></h2>
+                        <h2 className="text-6xl font-bold">4.<CountUp end={9} duration={3} /></h2>
                         <p className="mt-3 text-lg">Customer Rating</p>
                     </div>
 

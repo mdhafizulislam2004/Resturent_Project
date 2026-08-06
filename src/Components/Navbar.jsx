@@ -1,11 +1,24 @@
+import { use } from "react";
+import { FaRegUserCircle } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
+import { AuthContext } from "../Context/AuthContext";
 const Navbar = () => {
 
+    const { user, logOut } = use(AuthContext)
+
+    const LogOut = () => {
+        logOut()
+            .then(() => {
+
+            })
+
+    }
+
     const link = <>
-        <NavLink className={({isActive})=>isActive?"text-red-500 font-bold":"text-black"} to="/"><li className="m-2 text-xl">Home</li></NavLink>
-        <NavLink className={({isActive})=>isActive?"text-red-500 font-bold":"text-black"} to="/menu"><li className="m-2 text-xl">Menu</li></NavLink>
-        <NavLink className={({isActive})=>isActive?"text-red-500 font-bold":"text-black"} to="/about"><li className="m-2 text-xl">About</li></NavLink>
-        <NavLink className={({isActive})=>isActive?"text-red-500 font-bold":"text-black"} to="/contect"><li className="m-2 text-xl">Contect</li></NavLink>
+        <NavLink className={({ isActive }) => isActive ? "text-red-500 font-bold" : "text-black"} to="/"><li className="m-2 text-xl">Home</li></NavLink>
+        <NavLink className={({ isActive }) => isActive ? "text-red-500 font-bold" : "text-black"} to="/menu"><li className="m-2 text-xl">Menu</li></NavLink>
+        <NavLink className={({ isActive }) => isActive ? "text-red-500 font-bold" : "text-black"} to="/about"><li className="m-2 text-xl">About</li></NavLink>
+        <NavLink className={({ isActive }) => isActive ? "text-red-500 font-bold" : "text-black"} to="/contect"><li className="m-2 text-xl">Contect</li></NavLink>
     </>
 
     return (
@@ -22,7 +35,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <NavLink to="/"
-                    className="btn-ghost text-2xl text-blue-500"> Taste Nest <span className="text-red-500">Resturent</span>
+                    className="btn-ghost text-xl sm:text-2xl text-blue-500"> Taste Nest <span className="text-red-500">Resturent</span>
                 </NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -30,8 +43,17 @@ const Navbar = () => {
                     {link}
                 </ul>
             </div>
-            <div className="navbar-end mx-5">
-                <a href="" className="btn btn-primary outline-0"><Link to="/login">Login</Link></a>
+            <div className="navbar-end mx-5 gap-5">
+                <div>
+                    {
+                        user ? <img className="w-16 rounded-full" src={user.photoURL} alt="" /> : <FaRegUserCircle size={30} sm:size={44} />
+                    }
+                </div>
+                <div>
+                    {
+                        user ? <button type="button" className="btn-primary btn" onClick={LogOut}>SignOut</button> : <Link className="btn btn-primary outline-0" to="/login">Login</Link>
+                    }
+                </div>
             </div>
         </div>
     );

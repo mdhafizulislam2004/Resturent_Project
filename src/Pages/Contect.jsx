@@ -7,11 +7,10 @@ import Navbar from "../Components/Navbar";
 
 const Contect = () => {
     return (
-        <div className="overflow-hidden">
+        <div>
             <Navbar />
             <section className="py-20 bg-base-200">
                 <div className="max-w-6xl mx-auto px-5">
-
                     
                     <div className="text-center py-5">
                         <h4 className="text-orange-500 uppercase font-semibold">
@@ -54,7 +53,7 @@ const Contect = () => {
                             <motion.div whileHover={{ scale: 1.04}} className="p-6 bg-base-100 rounded-xl shadow">
                                 <h3 className="font-bold items-center flex gap-2 text-xl"><MdEmail /> Email</h3>
                                 <p className="mt-2 text-gray-500">
-                                    hafizul2004habib@gmail.com
+                                    hafizul2004official@gmail.com
                                 </p>
                             </motion.div>
 

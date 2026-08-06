@@ -1,4 +1,5 @@
 import { motion } from "motion/react"
+import { NavLink } from "react-router";
 
 const SoftDrinks = () => {
     return (
@@ -18,7 +19,7 @@ const SoftDrinks = () => {
                     <p className="py-6">
                         Quench your thirst with our refreshing collection of juices, smoothies, coffees, teas, and signature beverages. Made from fresh ingredients, every drink offers the perfect blend of flavor and freshness.
                     </p>
-                    <button className="btn btn-primary">Show More</button>
+                    <button className="btn btn-primary"><NavLink to="/menu">Show More</NavLink></button>
                 </div>
             </motion.div>
         </div>
