@@ -1,9 +1,11 @@
 import { motion } from "motion/react"
+import { TbCurrencyTaka } from "react-icons/tb";
+
 const SmallDataCard = ({ Data,index }) => {
     // console.log(Data);
 
 
-    const { title, image, items, description } = Data;
+    const { title, image, description,price } = Data;
     return (
 
         <motion.div whileHover={{ scale: 1.04 }}
@@ -17,7 +19,7 @@ const SmallDataCard = ({ Data,index }) => {
                 <img className="h-[300px] relative w-full p-3 rounded-2xl"
                     src={image}
                     alt={title} />
-                <p className="p-3 bg-green-500 absolute rounded-full bottom-38 text-2xl right-5 text-white">{items}</p>
+                <p className="w-16 h-16 bg-green-500 flex items-center absolute rounded-full bottom-38 text-2xl right-5 text-white"><TbCurrencyTaka size={44}/>{price}</p>
             </figure>
             <div className="card-body">
                 <h2 className=" text-2xl font-bold">{title}</h2>

@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className="navbar-end mx-5 gap-5">
                 <div>
                     {
-                        user ? <img className="w-16 rounded-full" src={user.photoURL} alt="" /> : <FaRegUserCircle size={30} sm:size={44} />
+                        user ? <img className="w-12 rounded-full" src={user.photoURL} alt="" /> : <FaRegUserCircle size={30} sm:size={44} />
                     }
                 </div>
                 <div>

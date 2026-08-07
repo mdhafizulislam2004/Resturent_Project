@@ -1,14 +1,19 @@
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import Navbar from "../Components/Navbar";
 import { use } from "react";
 // import { IoIosCloudUpload } from "react-icons/io";
 import { AuthContext } from "../Context/AuthContext";
 import { toast } from "react-toastify";
 import Footer from "../Components/Footer";
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
 
-    const { creatUser, UpdateUser } = use(AuthContext)
+    const { creatUser, UpdateUser,googleLogin } = use(AuthContext)
+
+    const location=useLocation()
+    const navigate=useNavigate()
+
     // const[fileupload,setFileUpload]=useState("")
 
 
@@ -17,8 +22,6 @@ const Register = () => {
     //             setFileUpload(fileupload)
     //         }
     //     }
-
-
     const submitHendaler = (e) => {
         e.preventDefault()
         const name = e.target.name.value;
@@ -31,32 +34,46 @@ const Register = () => {
             toast.error("Please Select checkbox")
             return
         }
-        
+
         creatUser(email, password)
             .then(result => {
                 console.log(result.user);
+                toast.success("Account Create Success")
 
                 UpdateUser({
                     displayName: name, photoURL: imgUrl
                 })
                     .then(() => {
-                        toast.success("Profile Update")
+                        // toast.success("Profile Update")
                     })
 
                 e.target.reset()
 
+                navigate(location?.state || "/")
             })
             .catch(error => {
                 console.log(error.message);
+                toast.error("Alredy Have Account This Email")
             })
-
     }
+
+     const GoogleLogin=()=>{
+        googleLogin()
+        .then(()=>{
+            toast.success("Google Login Success")
+            navigate(location?.state||"/")
+        })
+        .catch(()=>{
+            toast.error("Login Faield")
+        })
+    }
+
 
     return (
         <div>
             <Navbar />
             <div className="mx-4">
-                <div className="card mb-7 mt-32 bg-base-100 mx-auto w-full max-w-sm border border-gray-400 shrink-0 shadow-2xl">
+                <div className="card mb-7 mt-32 bg-base-100 mx-auto w-full max-w-sm border border-gray-300 shrink-0 shadow-2xl">
                     <div className="card-body mx-4">
                         <div className="text-center">
                             <h1 className="text-2xl font-bold">Create a new account</h1>
@@ -89,8 +106,12 @@ const Register = () => {
                                 </label>
                                 <p className="text-sm">I agree to the<span className="text-green-500 ml-1 text-sm">Term & Conditions</span></p>
                             </div>
-                            <button className="btn btn-neutral bg-green-500 border-0 text-white mt-2">Register</button>
+                            <button className="btn btn-neutral bg-green-500 border-0 text-white mt-2 mb-5">Register</button>
                         </form>
+                        <div className="flex flex-col mb-5 space-y-7 items-center">
+                            <span className="">Or continue with</span>
+                            <button onClick={GoogleLogin} className="btn bg-base-300 w-full"><FcGoogle size={20} />Login With Google</button>
+                        </div>
                         <button className="text-xs text-red-500">Have An Account? <Link to="/login" className="hover:underline text-blue-400">Login</Link></button>
                     </div>
                 </div>

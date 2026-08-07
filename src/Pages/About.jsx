@@ -18,7 +18,7 @@ const About = () => {
                         viewport={{ once: true }}>
                         <img
                             className="rounded-2xl shadow-2xl"
-                            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+                            src="https://imgs.search.brave.com/zVFmXNdbTWwg3ZiyREVYaQeYiFjjvKBp493dlShZxUo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vcmVzdGF1cmFu/dC13aXRoLWdyZWVu/LXBsYW50LWhhbmdp/bmctZnJvbS1jZWls/aW5nXzExMjQ1NzMt/MzE5ODQuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw"
                             alt="Restaurant"
                         />
                     </motion.div>
@@ -49,11 +49,10 @@ const About = () => {
                             moments.
                         </p>
 
-                        <button className="btn btn-warning mt-8 text-white">
-                            <NavLink to="/menu"> Explore Our Menu</NavLink>
-                        </button>
+                        <NavLink to="/menu"><button className="btn btn-warning mt-8 text-white">
+                             Explore Our Menu
+                        </button></NavLink>
                     </motion.div>
-
                 </motion.div>
                 <Rating />
             </section>

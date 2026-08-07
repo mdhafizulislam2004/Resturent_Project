@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { NavLink } from "react-router";
+// import { NavLink } from "react-router";
 const HealthyFoodSection = () => {
     return (
         <div className="hero bg-base-200 py-6">
@@ -18,7 +18,7 @@ const HealthyFoodSection = () => {
                     <p className="py-6">
                         Discover a healthier way to dine with our fresh salads, protein-packed bowls, and nutrient-rich meals. Every dish is carefully prepared using premium ingredients to deliver both exceptional taste and balanced nutrition.
                     </p>
-                    <button className="btn btn-primary"><NavLink to="/menu">Show More</NavLink></button>
+                    {/* <button className="btn btn-primary"><NavLink to="/menu">Show More</NavLink></button> */}
                 </div>
             </motion.div>
         </div>

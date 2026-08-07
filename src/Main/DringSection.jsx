@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { NavLink } from "react-router";
+// import { NavLink } from "react-router";
 
 const DringSection = () => {
     return (
@@ -19,7 +19,7 @@ const DringSection = () => {
                     <p className="py-6">
                         Enjoy a premium selection of handcrafted mocktails bursting with vibrant flavors and fresh ingredients. Perfect for every occasion, our signature drinks bring the bar experience to your table without alcohol.
                     </p>
-                    <button className="btn btn-primary"><NavLink to="/menu">Show More</NavLink></button>
+                    {/* <button className="btn btn-primary"><NavLink to="/menu">Show More</NavLink></button> */}
                 </div>
             </motion.div>
         </div>

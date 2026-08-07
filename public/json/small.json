@@ -5,6 +5,7 @@
     "slug": "healthy-food",
     "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
     "items": 25,
+    "price": 420,
     "description": "Fresh salads, protein bowls, and nutritious meals made with premium ingredients."
   },
   {
@@ -13,6 +14,7 @@
     "slug": "drinks-beverages",
     "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e",
     "items": 25,
+    "price": 180,
     "description": "Refreshing juices, smoothies, coffee, tea, and soft drinks for every moment."
   },
   {
@@ -21,6 +23,7 @@
     "slug": "bar-mocktails",
     "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
     "items": 25,
+    "price": 280,
     "description": "Premium mocktails blended with fresh fruits and sparkling flavors."
   },
   {
@@ -29,6 +32,7 @@
     "slug": "bbq-grill",
     "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd",
     "items": 25,
+    "price": 550,
     "description": "Perfectly grilled chicken, beef, seafood, and BBQ platters full of flavor."
   },
   {
@@ -37,6 +41,7 @@
     "slug": "biryani",
     "image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a",
     "items": 25,
+    "price": 480,
     "description": "Traditional biryani cooked with aromatic rice, spices, and tender meat."
   },
   {
@@ -45,6 +50,7 @@
     "slug": "desserts",
     "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b",
     "items": 25,
+    "price": 320,
     "description": "Delicious cakes, brownies, cheesecakes, ice creams, and sweet treats."
   },
   {
@@ -53,6 +59,7 @@
     "slug": "pizza",
     "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
     "items": 25,
+    "price": 450,
     "description": "Freshly baked pizzas loaded with premium cheese and delicious toppings."
   },
   {
@@ -61,6 +68,7 @@
     "slug": "chicken",
     "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086",
     "items": 25,
+    "price": 380,
     "description": "Crispy fried chicken, grilled chicken, wings, and spicy specialties."
   },
   {
@@ -69,6 +77,7 @@
     "slug": "pasta-noodles",
     "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9",
     "items": 25,
+    "price": 350,
     "description": "Creamy pasta, spicy noodles, and Italian-inspired dishes prepared fresh."
   }
 ]

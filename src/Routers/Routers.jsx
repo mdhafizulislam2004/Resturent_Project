@@ -8,6 +8,9 @@ import Login from "../Pages/Login";
 import About from "../Pages/About";
 import Contect from "../Pages/Contect";
 import Register from "../Pages/Register";
+import ThreeItemsCard from "../Main/ThreeItemsCard";
+import CardDitels from "../Pages/CardDitels";
+import ErrorPage from "../Components/ErrorPage";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -23,9 +26,21 @@ export const router = createBrowserRouter([
         },
         {
           path:"/menu",
+          loader:()=>fetch("/json/Items.json"),
           element:<PrivateRoutes>
             <Menu/>
           </PrivateRoutes>
+        },
+        {
+          path:"/cardditels/:id",
+          loader:()=>fetch("/json/Items.json"),
+          element:<PrivateRoutes>
+            <CardDitels/>
+          </PrivateRoutes>
+        },
+        {
+          path:"/threeitemscard/:id",
+          element:<ThreeItemsCard/>
         }
     ]
   },
@@ -44,5 +59,9 @@ export const router = createBrowserRouter([
   {
     path:"/register",
     Component:Register
+  },
+  {
+    path:"/*",
+    element:<ErrorPage></ErrorPage>
   }
 ]);
