@@ -111,7 +111,7 @@ const Register = () => {
                         </label>
                        } */}
                             <input type="text" className="input focus:border-red-500 outline-none " required name="name" placeholder="Your Name" />
-                            <input type="text" className="input focus:border-red-500 outline-none " required name="imgUrl" placeholder="Image Url" />
+                            <input type="text" className="input focus:border-red-500 outline-none"  name="imgUrl" placeholder="Image Url" />
                             <input type="email" required className="input outline-none focus:border-red-500 " name="email" placeholder="Email" />
                             <div className="relative">
                                 <input type={showPassword ? "text" : "password"} required className="input focus:outline-none focus:border-green-500" name="password" placeholder="Password" />
