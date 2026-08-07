@@ -11,8 +11,8 @@ const AuthProvider = ({children}) => {
     const googleProvider=new GoogleAuthProvider()
 
     const creatUser=(email,password)=>{
-     return createUserWithEmailAndPassword(auth,email,password)
-     setLoder(true)
+        setLoder(true)
+        return createUserWithEmailAndPassword(auth,email,password)
     }
 
     useEffect(()=>{
@@ -23,15 +23,15 @@ const AuthProvider = ({children}) => {
         return ()=>{
             unsubscribe()
         }
-    })
+    }, [])
 
     const logOut=()=>{
         return signOut(auth)
     }
 
     const signIn=(email,password)=>{
-        return signInWithEmailAndPassword(auth,email,password)
         setLoder(true)
+        return signInWithEmailAndPassword(auth,email,password)
     }
 
     const UpdateUser=(currentUSer)=>{

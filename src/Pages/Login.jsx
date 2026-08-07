@@ -1,31 +1,34 @@
 import { Link, useLocation, useNavigate } from "react-router";
 import Navbar from "../Components/Navbar";
-import { use, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../Context/AuthContext";
 import { toast } from "react-toastify";
 import { FcGoogle } from "react-icons/fc";
 import Footer from "../Components/Footer";
+import { FaEyeSlash } from "react-icons/fa";
+import { IoEyeSharp } from "react-icons/io5";
+
 
 
 const Login = () => {
 
-    const { signIn,resetPassword,googleLogin } = use(AuthContext)
+    const[showPassword,setShowPassword]=useState(false)
+
+    const { signIn,resetPassword,googleLogin } = useContext(AuthContext)
     const emailRef=useRef()
 
     const location=useLocation()
     const navigate=useNavigate()
 
+
+    const seePassword=()=>{
+        setShowPassword(!showPassword)
+    }
+
     const submitHendaler = (e) => {
         e.preventDefault()
         const email = e.target.email.value;
         const password = e.target.password.value;
-        const checkbox = e.target.checkbox.checked;
-        console.log("Submitted", email, password, checkbox);
-
-        if (!checkbox) {
-            toast.error("Please Select Checkbox")
-            return
-        }
 
         signIn(email, password)
             .then((result) => {
@@ -35,8 +38,7 @@ const Login = () => {
                 navigate(location?.state || "/")
             })
             .catch(() => {
-                // console.log(error.message);
-                toast.error("Entar a Vlaid Email Or Password")
+                toast.error("Enter a valid email or password")
             })
     }
 
@@ -77,7 +79,10 @@ const Login = () => {
 
                             <input type="email" className="input focus:outline-none focus:border-green-500" ref={emailRef} required name="email" placeholder="Email" />
 
-                            <input type="password" required className="input focus:outline-none focus:border-green-500" name="password" placeholder="Password" />
+                            <div className="relative">
+                                <input type={showPassword?"text":"password"} required className="input focus:outline-none focus:border-green-500" name="password" placeholder="Password" />
+                                <button onClick={seePassword} type="button" className="absolute right-6 top-3 text-xs" >{showPassword?<FaEyeSlash size={20}/>:<IoEyeSharp size={20} />}</button>
+                            </div>
                             <div className="items-center justify-between flex mt-2">
                                 <label className="label text-sm">
                                     <input type="checkbox" name="checkbox" className="checkbox" />

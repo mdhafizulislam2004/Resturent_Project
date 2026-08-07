@@ -1,18 +1,23 @@
 import { Link, useLocation, useNavigate } from "react-router";
 import Navbar from "../Components/Navbar";
-import { use } from "react";
+import { useContext, useState } from "react";
 // import { IoIosCloudUpload } from "react-icons/io";
 import { AuthContext } from "../Context/AuthContext";
 import { toast } from "react-toastify";
 import Footer from "../Components/Footer";
 import { FcGoogle } from "react-icons/fc";
+import { FaEyeSlash } from "react-icons/fa";
+import { IoEyeSharp } from "react-icons/io5";
 
 const Register = () => {
+    const [showPassword, setShowPassword] = useState(false)
+    const { creatUser, UpdateUser, googleLogin } = useContext(AuthContext)
 
-    const { creatUser, UpdateUser,googleLogin } = use(AuthContext)
-
-    const location=useLocation()
-    const navigate=useNavigate()
+    const seePassword = () => {
+        setShowPassword(!showPassword)
+    }
+    const location = useLocation()
+    const navigate = useNavigate()
 
     // const[fileupload,setFileUpload]=useState("")
 
@@ -35,6 +40,11 @@ const Register = () => {
             return
         }
 
+        if (!/[A-Z]/.test(password)) {
+            toast.error("Password must contain at least one uppercase letter")
+            return
+        }
+
         creatUser(email, password)
             .then(result => {
                 console.log(result.user);
@@ -53,19 +63,23 @@ const Register = () => {
             })
             .catch(error => {
                 console.log(error.message);
-                toast.error("Alredy Have Account This Email")
+                if (error.code === "auth/email-already-in-use") {
+                    toast.error("Alredy Have An Account Please Login")
+                } else {
+                    toast.error("Account Nor Created Please Try Again")
+                }
             })
     }
 
-     const GoogleLogin=()=>{
+    const GoogleLogin = () => {
         googleLogin()
-        .then(()=>{
-            toast.success("Google Login Success")
-            navigate(location?.state||"/")
-        })
-        .catch(()=>{
-            toast.error("Login Faield")
-        })
+            .then(() => {
+                toast.success("Google Login Success")
+                navigate(location?.state || "/")
+            })
+            .catch(() => {
+                toast.error("Login Faield")
+            })
     }
 
 
@@ -99,7 +113,10 @@ const Register = () => {
                             <input type="text" className="input focus:border-red-500 outline-none " required name="name" placeholder="Your Name" />
                             <input type="text" className="input focus:border-red-500 outline-none " required name="imgUrl" placeholder="Image Url" />
                             <input type="email" required className="input outline-none focus:border-red-500 " name="email" placeholder="Email" />
-                            <input type="password" required className="input outline-none focus:border-red-500" name="password" placeholder="Password" />
+                            <div className="relative">
+                                <input type={showPassword ? "text" : "password"} required className="input focus:outline-none focus:border-green-500" name="password" placeholder="Password" />
+                                <button onClick={seePassword} type="button" className="absolute right-4 top-2.5 text-xs" >{showPassword ? <FaEyeSlash size={20} /> : <IoEyeSharp size={20} />}</button>
+                            </div>
                             <div className="flex mt-2 items-center gap-2">
                                 <label className="label text-sm">
                                     <input type="checkbox" name="checkbox" className="checkbox text-red-500" />
